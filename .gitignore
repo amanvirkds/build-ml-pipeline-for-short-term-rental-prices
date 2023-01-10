@@ -113,3 +113,18 @@ mlruns/
 outputs/
 random_forest_dir/
 multirun/
+
+# Mlflow
+mlruns/
+mlartifacts/
+outputs/
+mlruns.db
+
+# outputs
+outputs/
+
+# wandb
+wandb/
+
+# artifacts
+artifacts/
