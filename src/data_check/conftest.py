@@ -1,3 +1,7 @@
+"""
+configuration parameters to perform the data validation tests
+"""
+
 import pytest
 import pandas as pd
 import wandb
@@ -13,6 +17,9 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope='session')
 def data(request):
+    """
+    function will provide the data from artifact for testing
+    """
     run = wandb.init(job_type="data_tests", resume=True)
 
     # Download input artifact. This will also note that this script is using this

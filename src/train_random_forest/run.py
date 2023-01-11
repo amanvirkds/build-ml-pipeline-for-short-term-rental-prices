@@ -39,6 +39,9 @@ logger = logging.getLogger()
 
 
 def go(args):
+    """
+    build the traning pipeline and train the model
+    """
 
     run = wandb.init(job_type="train_random_forest")
     run.config.update(args)
@@ -150,6 +153,9 @@ def go(args):
 
 
 def plot_feature_importance(pipe, feat_names):
+    """
+    to plot the feature importance based on trained model
+    """
     # We collect the feature importance for all non-nlp features first
     feat_imp = pipe["random_forest"].feature_importances_[: len(feat_names)-1]
     # For the NLP feature we sum across all the TF-IDF dimensions into a global
