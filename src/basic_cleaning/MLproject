@@ -1,4 +1,7 @@
 name: basic_cleaning
+# ML project component to perform the basic cleaning
+# steps
+
 conda_env: conda.yml
 
 entry_points:
@@ -23,11 +26,11 @@ entry_points:
 
       min_price:
         description: Minimum price to consider
-        type: int
+        type: float
 
       max_price:
         description: Maximum price to consider
-        type: int
+        type: float
 
 
     command: >-

@@ -1,3 +1,7 @@
+"""
+module to perform feature engineering steps before training the model
+"""
+
 import pandas as pd
 import numpy as np
 

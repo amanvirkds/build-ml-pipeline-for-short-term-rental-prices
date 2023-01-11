@@ -1,4 +1,6 @@
 name: data_check
+# ML project component to preform the data validations
+
 conda_env: conda.yml
 
 entry_points:

@@ -1,3 +1,7 @@
+"""
+tests required to be performed before executing the training and inference pipeline
+"""
+
 import pandas as pd
 import numpy as np
 import scipy.stats
